@@ -45,7 +45,7 @@ Você precisa ter o **Python 3** instalado em seu sistema operacional.
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [[Link do seu Repositóri](https://github.com/btavolarogi/PROJETO_SENHA_ALEATORIA.git)o]
+    git clone [https://github.com/btavolarogi/PROJETO_SENHA_ALEATORIA.git]
     ```
 2.  **Acesse o diretório:**
     ```bash
