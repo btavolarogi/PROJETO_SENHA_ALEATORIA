@@ -45,11 +45,11 @@ Você precisa ter o **Python 3** instalado em seu sistema operacional.
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [Link do seu Repositório]
+    git clone [[Link do seu Repositóri](https://github.com/btavolarogi/PROJETO_SENHA_ALEATORIA.git)o]
     ```
 2.  **Acesse o diretório:**
     ```bash
-    cd [nome-do-diretorio-do-projeto]
+    cd [PROJETO_SENHA_ALEATORIA]
     ```
 3.  **Instale o módulo de cópia (Opcional):**
     Para ter a funcionalidade de cópia automática, instale o `pyperclip`:
@@ -58,8 +58,7 @@ Você precisa ter o **Python 3** instalado em seu sistema operacional.
     ```
 4.  **Execute o script principal:**
     ```bash
-    python3 [nome_do_seu_arquivo.py]
-    # Ex: python3 gerador_senha.py
+    python3 [senha_aleatoria.py]
     ```
 
 ### ⌨️ Exemplo de Uso (CLI)
