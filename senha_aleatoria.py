@@ -1,16 +1,3 @@
-"""
-Gerador de Senhas Aleatórias
-----------------------------
-Cria senhas fortes e aleatórias com base em critérios definidos pelo usuário.
-
-Conceitos abordados:
-- Módulo `random` para gerar caracteres aleatórios.
-- Manipulação de strings.
-- Entrada e saída de dados.
-- Boas práticas de código (funções, validação e comentários).
-- Uso opcional do módulo `pyperclip` para copiar a senha gerada.
-"""
-
 import random
 import string
 
@@ -23,19 +10,6 @@ except ImportError:
 
 def gerar_senha(tamanho: int, incluir_maiusculas: bool, incluir_minusculas: bool,
                 incluir_numeros: bool, incluir_simbolos: bool) -> str:
-    """
-    Gera uma senha aleatória de acordo com os critérios definidos.
-
-    Args:
-        tamanho (int): comprimento da senha.
-        incluir_maiusculas (bool): se deve incluir letras maiúsculas.
-        incluir_minusculas (bool): se deve incluir letras minúsculas.
-        incluir_numeros (bool): se deve incluir números.
-        incluir_simbolos (bool): se deve incluir símbolos.
-
-    Returns:
-        str: senha gerada.
-    """
 
     grupos = []
 
