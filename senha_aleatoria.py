@@ -25,21 +25,17 @@ def gerar_senha(tamanho: int, incluir_maiusculas: bool, incluir_minusculas: bool
     if not grupos:
         raise ValueError('Você deve selecionar ao menos um tipo de caractere para gerar a senha.')
 
-    # Garante pelo menos um caractere de cada tipo selecionado
     senha = [random.choice(grupo) for grupo in grupos]
 
-    # Junta todos os tipos possíveis e completa o restante
     todos_caracteres = ''.join(grupos)
     senha += random.choices(todos_caracteres, k=tamanho - len(senha))
 
-    # Embaralha a senha final para evitar padrões previsíveis
     random.shuffle(senha)
 
     return ''.join(senha)
 
 
 def solicitar_tamanho() -> int:
-    """ Solicite ao usuário o tamanho da senha com validação"""
     while True:
         try:
             tamanho = int(input('Digite o tamanho da senha: '))
@@ -51,13 +47,11 @@ def solicitar_tamanho() -> int:
 
 
 def solicitar_opcao(mensagem: str) -> bool:
-    """Pergunta ao usuário se deseja incluir determinado tipo de caractere."""
     resposta = input(mensagem).strip().lower()
     return resposta == 's'
 
 
 def main():
-    """Função principal: coleta informações do usuário e exibe a senha gerada."""
 
     print('=' * 45)
     print('Gerador de senhas aleatórias'.center(45, '='))
